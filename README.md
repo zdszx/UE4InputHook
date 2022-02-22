@@ -9,12 +9,12 @@ Using @MicrosoftDetour to hook the UE4 input flow, as can be seen below, all Inp
 
 ![image](https://user-images.githubusercontent.com/43289834/155071798-c8c586ff-650e-41c0-be65-13248d2e7db2.png)
 
-## **1.2 Detour ** 
+## **1.2 Detour** 
 
 Most commonly used to intercept Win32 API calls within an application.
 The Detours library enables interception of function calls. Interception code is applied dynamically at runtime. Detours replaces the first few instructions of the target function with an unconditional jump to the user-provided detour function.
 
-## **1.3 UE InputFlow **
+## **1.3 UE InputFlow**
 
 ![v2-33ff9ab5a1de90625354c591b67a1fad_1440w](https://user-images.githubusercontent.com/43289834/155072114-967a26e0-d4fc-4157-b50e-1e9a3771a6ec.png)
 
