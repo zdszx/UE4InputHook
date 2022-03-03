@@ -8,7 +8,28 @@ Using @MicrosoftDetour to hook the UE4 input flow, as can be seen below, all Inp
 ## **1.1 The basic idea of this project**
 
 ![image](https://user-images.githubusercontent.com/43289834/155071798-c8c586ff-650e-41c0-be65-13248d2e7db2.png)
-
+The main idea of dll is to find the similar structure in UnrealEngine and hook the DeferMessage relating function. 
+```
+void mainloop() {
+    MSG msg;
+    ZeroMemory(&msg, sizeof(MSG));
+    
+    while (true)
+    {
+        if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
+        {
+            if (msg.message == WM_QUIT)
+                break;
+    
+            TranslateMessage(&msg);
+            DispatchMessage(&msg);
+        }
+        else {
+            // run game code
+        }
+    }
+}
+```
 ## **1.2 Detour** 
 
 Most commonly used to intercept Win32 API calls within an application.
@@ -17,6 +38,8 @@ The Detours library enables interception of function calls. Interception code is
 ## **1.3 UE InputFlow**
 
 ![v2-33ff9ab5a1de90625354c591b67a1fad_1440w](https://user-images.githubusercontent.com/43289834/155072114-967a26e0-d4fc-4157-b50e-1e9a3771a6ec.png)
+
+
 
 
 ## **2.How to use it**
