@@ -1,7 +1,7 @@
 # UEInput
 
 ## **1.What**
-Using @MicrosoftDetour to hook the UE4 input flow, as can be seen below, all InputKey is blocked:
+Using @MicrosoftDetour to hook the UE4 input flow, as can be seen below, all InputKey is blocked or replaced:
 
 <img width="500" alt="asdasd" src="https://user-images.githubusercontent.com/43289834/153576189-eaf1aaec-7c5e-486b-af3b-3c374f221ad2.PNG">
 
