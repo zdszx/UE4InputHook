@@ -8,7 +8,8 @@ Using @MicrosoftDetour to hook the UE4 input flow, as can be seen below, all Inp
 ## **1.1 The basic idea of this project**
 
 ![image](https://user-images.githubusercontent.com/43289834/155071798-c8c586ff-650e-41c0-be65-13248d2e7db2.png)
-The main idea of dll is to find the similar structure in UnrealEngine and hook the DeferMessage relating function. 
+
+The main idea of dll is to find the similar structure in UnrealEngine and hook the DispatchMessage relating function. 
 ```
 void mainloop() {
     MSG msg;
