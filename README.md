@@ -47,6 +47,8 @@ The Detours library enables interception of function calls. Interception code is
 Put the Plugin into your UE4 project directory , and then change the directory name according to dll file location in the 
 UE4InputHook/Plugins/WindowsMessageHandler/Source/WindowsMessageHandlerExample/Private/WindowsMessageHandlerExampleModule.cpp
 
+The dll file is in the folder Dll_notepad_write_detour
+
 ## **3.To Do** 
    1.is some C# hook decision?
    2.to replace the message completely
