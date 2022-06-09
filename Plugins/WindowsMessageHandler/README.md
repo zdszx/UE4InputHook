@@ -47,13 +47,6 @@ Once activated, the plug-in simply writes intercepted Windows messages to the
 output log.
 
 
-## Support
-
-Please [file an issue](https://github.com/ue4plugins/WindowsMessageHandlerExample/issues),
-submit a [pull request](https://github.com/ue4plugins/WindowsMessageHandlerExample/pulls?q=is%3Aopen+is%3Apr)
-or email us at info@headcrash.industries
-
-
 ## References
 
 * [Introduction to UE4 Plugins](https://wiki.unrealengine.com/An_Introduction_to_UE4_Plugins) (Unreal Engine Wiki)
